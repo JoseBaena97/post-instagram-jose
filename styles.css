@@ -2,6 +2,10 @@ body {
     background-color: grey;
 }
 
+div {
+    box-sizing: border-box;
+}
+
 header h1 {
     background-color: white;
     text-align: center;
@@ -10,10 +14,29 @@ header h1 {
 
 div.post {
     background-color: white;
+    margin-top: 10px;
 }
 
 div.post img {
     width: 100%;
+}
+
+div.post .post-title div:first-child {
+    display: inline-block;
+    width: 80%;
+}
+
+div.post .post-title div:last-child {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    text-align: right;
+    color: grey;
+}
+
+div.post h2, div.post p {
+    padding: 10px;
+    margin: 0;
 }
 
 div.container {
